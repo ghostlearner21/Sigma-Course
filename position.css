@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parent{
+    border : 2px solid black;
+    width: 80vw;
+    margin : 20px auto;
+    padding: 40px;
+
+    /* font-properties */
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    /* adding relative property to the parent respective of body element */
+    position: relative;
+
+    box-sizing: border-box;
+}
+
+
+.box1{
+    background-color: hsl(141, 97%, 37%);
+    position: sticky;
+    top: 5px;
+    
+}
+.box2{
+    background-color: hsl(180, 85%, 70%);
+    position: fixed;
+    bottom: 0;
+    width: 20vw;
+    height: 20vh;
+    right:0;
+}
+.box3{
+    background-color: hsl(19, 89%, 50%);
+    /* so that orange boxes remains behind green which is sticky in nature */
+    position: relative;
+    z-index: -1;
+}
+.box{
+    min-height: 20vh;
+    margin : 20px;
+    border : 2px solid blue;
+}

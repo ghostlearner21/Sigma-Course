@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding: 0;
+    background-color:lightblue;
+}
+.card{
+    border : 1px solid hsl(0, 0%, 87%);
+    border-radius: 5px;
+    max-width : 30vw;
+    max-height: 80vh;
+    margin : 10vh auto;
+    padding: 1vw;
+
+    /* text-properties */
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+    background-color : azure;
+
+    overflow: auto;
+}
+.tablet{
+    background-color: inherit;
+}
+.tablet-image-div{
+    width : 30vw;
+    border-radius: 5px;
+}
+
+.content{
+    margin-top: 1vw;
+    background-color: inherit;
+    text-overflow: ellipsis;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    background-color: azure;
+    margin-top: 2vw;
+}
+
+.list-item{
+    background-color: rgb(226, 239, 239);
+    border : 1px solid hsl(0, 0%, 87%);
+    border-radius: 10px;
+    padding : 2px 8px;
+    margin : 0 5px;
+}
+
+.readmore{
+    background-color: hsl(208, 75%, 88%);
+    color: hsl(196, 83%, 54%);
+    border: 1px solid hsl(196, 83%, 54%);
+    margin: 3vh 38%;
+    padding: 6px;
+    font-weight: bolder;
+    font-size: 10px;
+    border-radius: 10px;
+}

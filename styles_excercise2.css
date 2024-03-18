@@ -1,0 +1,12 @@
+.main{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.first-para{
+    color :hsl(0, 92%, 60%);
+    background-color: hsl(64, 98%, 53%);
+}
+.other-para{
+    background-color: hsl(254, 96%, 73%);
+    color: aliceblue;
+}
