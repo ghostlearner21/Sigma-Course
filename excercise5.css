@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Segoe UI';
+}
+.flex-container{
+    padding: 3vh 0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+div:nth-child(2){
+    width:24vw;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.nav-item{
+    color: rgb(59, 59, 59);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    margin: 0 1vw;;
+}
+
+div:nth-child(7){
+    margin : 0 1vw;
+    width:auto;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.intro-conatiner{
+    margin: 10vh auto;
+    min-width:80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 3vh;
+}
+.intro-conatiner div {
+    text-align: center;
+    /* border : 2px solid black; */
+    width: 80vw;
+}
+.intro-conatiner div:first-child {
+    font-size: 38px;
+}
+.intro-conatiner div:first-child img {
+    cursor: pointer;
+}
+.intro-conatiner div:first-child span{
+    font-weight: 700;
+}
+.intro-conatiner div:nth-child(2) {
+    margin : 2vh 0;
+    font-size: 20px;
+}
+.intro-conatiner button:nth-child(3) {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight:800;
+    color: azure;
+    background-color: rgb(35, 185, 230);
+    padding: 13px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}

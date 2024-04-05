@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+    --color: aqua;
+}
+
+.navbar{
+    background-color: var(--color);
+    position: relative;
+    top : 0;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+.navbar ul li{
+    margin : 4px 8px;
+    padding : 0 4px; 
+    cursor: pointer;
+}
+.navbar ul li:hover{
+    text-decoration: underline 1px solid black;
+}
+
+@media not screen and (min-width:350px){
+    :root{
+        --color : rgb(183, 183, 253);
+    }
+    .navbar ul {
+        display: block;
+    }
+    .navbar{
+    }
+}
