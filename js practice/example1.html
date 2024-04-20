@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        padding : 1vw;
+        min-height: 50vh;
+        min-width: 100vw;
+        background-color: azure;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap:10px;
+        column-gap: 5px;
+      }
+      .box {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 5px;
+        background-color: orange;
+        text-align: center;
+      }
+      .new_boxes{
+        background-color: aquamarine;
+      }
+
+      button{
+        padding : 10px;
+        border : none;
+        border-radius: 7px;
+        background-color: rgb(95, 95, 255);
+        color: white;
+        margin : 0 10px;
+      }
+
+      .buttons{
+        width:100vw;
+        text-align: center;
+        margin-top: 10vh;;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">box 1</div>
+      <div class="box">box 2</div>
+      <div class="box">box 3</div>
+      <div class="box">box 4</div>
+      <div class="box">box 5</div>
+    </div>
+    <div class="buttons">
+      <button id="112">Add Box</button>
+      <button id="113">Remove Box</button>
+    </div>
+    <script>
+      let button = document.getElementById("112");
+
+      button.addEventListener("click", (e) => {
+        let new_box = document.createElement("div");
+        new_box.setAttribute("class", "box new_boxes");
+
+        let boxes = document.querySelector(".container").children;
+        new_box.innerText = "box "+(boxes.length+1);
+
+        const container_object = document.querySelector(".container");
+        container_object.insertAdjacentElement("beforeend", new_box);
+      });
+
+      let button_2 = document.getElementById("113");
+      button_2.addEventListener("click", (e) => {
+        let node_to_be_deleted = document.querySelector(".container").children;
+        node_to_be_deleted[node_to_be_deleted.length-1].remove();
+      })
+
+      document.body.addEventListener("keypress", (e)=>{
+        if(e.key == 'a' && e.ctrlKey == true){
+          let ans = confirm("Are you sure you want a blast ?");
+          if(ans==true) alert("Boom...!");
+        }
+        console.log(e);
+      })
+    </script>
+  </body>
+</html>
