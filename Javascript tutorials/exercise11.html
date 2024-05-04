@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    const number = prompt("Enter a number : ");
+    let result = number;
+    let arr = [];
+    for(let index = number; index>0; index--){
+        arr.push(index);
+    }
+    console.log(arr.reduce((a,b)=> {
+        return a*b;
+    }));
+</script>    
+</body>
+
+</html>

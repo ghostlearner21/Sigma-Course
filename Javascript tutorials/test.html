@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .container button{
+            border: 1px solid azure;
+            border-radius: 5px;
+            padding: 3px 15px;   
+        }
+
+        button:hover{
+            cursor: pointer;
+        }
+        .container{
+            width: 50vw;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Set The Background colour by clicking : </h3>
+        <button style="background-color: aqua;" onclick="setColor(`aqua`)">Aqua</button>
+        <button style="background-color: blueviolet;" onclick="setColor(`blueviolet`)">blueviolet</button>
+        <button style="background-color:aquamarine;" onclick="takeInput()">Add Your color</button>
+    </div>
+    <script>
+        function setColor(color){
+            document.body.style.backgroundColor = color;
+            document.title = color;
+        }
+
+        function takeInput(){
+            const color = prompt("Enter Your Colour");
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
